@@ -25,8 +25,14 @@ jobs:
         run: npx nx build react-native-expo
       - name: Create token
         run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
-      - name: Create token
+      - name: Configure token
+        run: echo "@kettlespace-eng:registry=https://npm.pkg.github.com" > ./.npmrc
+        working-directory: ./dist/packages/react-native-expo
+      - name: Look token
         run: cat ~/.npmrc
+      - name: Look token
+        run: cat ./.npmrc
+        working-directory: ./dist/packages/react-native-expo
       - name: Publish repo
         run: npm publish
         working-directory: ./dist/packages/react-native-expo
