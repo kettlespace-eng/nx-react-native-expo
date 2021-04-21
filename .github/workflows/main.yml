@@ -24,7 +24,7 @@ jobs:
       - name: Create build
         run: npx nx build react-native-expo
       - name: Create token
-        run: echo "//registry.npmjs.org/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
+        run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > ~/.npmrc
       - name: Publish repo
         run: npm publish
         working-directory: ./dist/packages/react-native-expo
