@@ -28,5 +28,5 @@ jobs:
         run: npm publish
         working-directory: ./dist/packages/react-native-expo
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
  
