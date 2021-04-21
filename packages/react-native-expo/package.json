@@ -1,6 +1,6 @@
 {
   "name": "@kettlespace-eng/nx-react-native-expo",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "description": "Expo Managed Plugin for Nx",
   "repository": {
     "type": "git",

@@ -28,11 +28,6 @@ jobs:
       - name: Configure token
         run: echo "@kettlespace-eng:registry=https://npm.pkg.github.com" > ./.npmrc
         working-directory: ./dist/packages/react-native-expo
-      - name: Look token
-        run: cat ~/.npmrc
-      - name: Look token
-        run: cat ./.npmrc
-        working-directory: ./dist/packages/react-native-expo
       - name: Publish repo
         run: npm publish
         working-directory: ./dist/packages/react-native-expo
