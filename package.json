@@ -1,7 +1,8 @@
 {
-  "name": "nrwl",
-  "version": "0.0.0",
+  "name": "@kettlespace-eng/nrwl",
+  "version": "0.0.2",
   "license": "MIT",
+  "repository": "https://github.com/kettlespace-eng/nx-react-native-expo",
   "scripts": {
     "nx": "nx",
     "start": "nx serve",
@@ -24,7 +25,6 @@
     "help": "nx help",
     "workspace-generator": "nx workspace-generator"
   },
-  "private": true,
   "devDependencies": {
     "@nrwl/cli": "11.1.1",
     "@nrwl/eslint-plugin-nx": "11.1.1",
@@ -54,5 +54,7 @@
   "resolutions": {
     "rxjs": "6.6.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ci-info": "npm:undefined@*"
+  }
 }
