@@ -34,6 +34,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 15.x
-        - name: Publish repo
-          run: npm publish
-          working-directory: ./dist/packages/react-native-expo
+      - name: Publish repo
+        run: npm publish
+        working-directory: ./dist/packages/react-native-expo
