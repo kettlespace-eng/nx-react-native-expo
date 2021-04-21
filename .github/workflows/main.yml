@@ -1,0 +1,14 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish_to_npm:
+    name: Publish to github npm
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 1
