@@ -54,7 +54,11 @@
   "resolutions": {
     "rxjs": "6.6.0"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
-    "ci-info": "npm:undefined@*"
+    "ci-info": "npm:undefined@*",
+    "nx": "^12.0.8"
   }
 }
