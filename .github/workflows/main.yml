@@ -18,6 +18,8 @@ jobs:
           node-version: 15.x
       - name: Install dependencies
         run: npm install
-
+      - name: Install dependencies(2)
+        run: yarn add ci-info
+        
       - name: Create build
         run: npx nx build react-native-expo
