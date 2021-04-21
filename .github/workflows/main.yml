@@ -5,10 +5,18 @@ on:
       - main
 
 jobs:
-  publish_to_npm:
-    name: Publish to github npm
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Install dependencies
+        run: npm install
+
+      - name: Create build
+        run: npx nx build react-native-expo
