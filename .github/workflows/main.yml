@@ -23,17 +23,8 @@ jobs:
 
       - name: Create build
         run: npx nx build react-native-expo
-  
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-        with:
-          fetch-depth: 1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 15.x
+
       - name: Publish repo
         run: npm publish
         working-directory: ./dist/packages/react-native-expo
+ 
