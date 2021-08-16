@@ -65,9 +65,13 @@ function createBundleOptions(options) {
   return Object.keys(options).reduce((acc, _k) => {
     const v = options[_k];
     const k = toFileName(_k);
-    if (v === undefined) return acc;
+    if (v === undefined || v === false) return acc;
     if (k !== 'platform') {
-      acc.push(`--${k}`, v);
+      if (v === true) {
+        acc.push(`--${k}`);
+      } else {
+        acc.push(`--${k}`, v);
+      }
     }
     return acc;
   }, []);

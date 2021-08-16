@@ -1,6 +1,6 @@
 {
   "name": "@kettlespace-eng/nx-react-native-expo",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "Expo Managed Plugin for Nx",
   "repository": {
     "type": "git",
@@ -16,7 +16,7 @@
   ],
   "main": "index.js",
   "types": "index.d.ts",
-  "author": "Jacopo Martinelli",
+  "author": "devcauldron <jeff@kettlespace.com>",
   "license": "MIT",
   "bugs": {
     "url": "hhttps://github.com/JacopoPatroclo/nx-react-native-expo/issues"

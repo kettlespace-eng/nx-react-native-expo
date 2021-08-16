@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/schema",
   "id": "NxReactApp",
-  "title": "Create a React Application for Nx",
+  "title": "Create a React-Native Expo Application for Nx",
   "examples": [
     {
       "command": "g app myapp --directory=nested",

@@ -4,7 +4,7 @@
   "type": "object",
   "properties": {
     "platform": {
-      "description": "Platform to build for (ios, android).",
+      "description": "Platform to build for (ios, android, web).",
       "anyOf": [
         {
           "enum": ["android", "ios", "web"]
